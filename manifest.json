@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "hastag generator",
+  "version": "1.0",
+  "description": "Calls AI API and displays the response.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src https://generativelanguage.googleapis.com/ https://api.imgbb.com/;"
+  }
+}
