@@ -6,32 +6,31 @@
   <body>
     <h2>Caption & Hashtag Generator</h2>
     
-   
     <div class="toggle-container">
       <label class="toggle-label"> Dark Mode</label>
       <div id="darkModeToggle" class="toggle-btn"></div>
     </div>
 
-    
     <input type="file" id="imageUpload" accept="image/*" />
     <img id="preview" class="hidden" />
 
-    
     <button id="generate">Get AI Response</button>
     <textarea id="hashtags" readonly placeholder="Generated hashtags and captions will appear here..."></textarea>
     
     <button id="copyButton">Copy</button>
    
-    
-    
     <h3> Custom AI Prompt:</h3>
     <input type="text" id="customPrompt" placeholder="Type your custom prompt here..." />
     <button id="submitPrompt">Submit Prompt</button>
 
-    
     <div id="promptSuggestion">
       <h3> Suggested Prompts:</h3>
       <ul id="promptList"></ul>
+    </div>
+    
+    <div class="history">
+      <h3>Previous Responses</h3>
+      <ul id="historyList"></ul>
     </div>
 
     <script src="popup.js"></script>
